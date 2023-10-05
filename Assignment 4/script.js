@@ -254,6 +254,21 @@ function resetForm(){
     document.getElementById("zipcode").value = "";
     document.getElementById("comments").value = "";
     document.getElementById("Inputs").value = "";
+    //document.getElementById(`Inputs`).style.display = "none";
+    document.getElementById(`instruction`).style.display = "none";
+    var radioBtn = document.getElementsByName("title");
+    for(var i=0;i<radioBtn.length;i++)
+        radioBtn[i].checked = false;
+    var checkBtn = document.getElementsByClassName("checkbox");
+    for(var i=0;i<checkBtn.length;i++)
+        checkBtn[i].checked = false;
+    var checkBtn2 = document.getElementsByClassName("check");
+    for(var i=0;i<checkBtn2.length;i++){
+        checkBtn2[i].checked = false;
+        checkBtn2[i].parentElement.style.display = "none";
+    }
+    
+        
 }
 
 
