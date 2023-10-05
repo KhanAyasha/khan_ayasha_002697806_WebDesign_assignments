@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+	  able input{
+		margin: 0 5px;
+			
+		}
+
+		table{
+			border: 1px solid black;
+			margin: 10px auto;
+			width: 90%; 
+		}
+
+		table td,th{
+			border: 1px solid black; 
+			padding: 5px;
+		}
+
+		table th{
+			color: black;
+		}
+		#feedbackTable{
+			display: none;
+		}
+  </style>
+ </head>
+ <body>
+ <div id="container">
+	 
+	 <main>
+	 <h2>Feedback</h2>
+	 <h3>Love something? Hate something? Let us know!</h3>
+		 Note : Fields marked with an asterisk(*) are mandatory
+		 <br><br>
+		 <form method="post" name = "myForm" id="myForm">
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="Miss" required="required"/>Miss
+			<input type="radio" name="title" id="mr" value="Mr" required="required"/>Mr.
+			<input type="radio" name="title" id="mrs" value="Mrs" required="required"/>Mrs.
+			<br><br>
+			<label for="firstName">First Name*:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="First Name" />	
+			<br><br>
+			<div id="error_firstName" style="display: none; color: red;">
+				Invalid First Name, Please enter valid First name.
+				<br><br>
+			</div>
+
+			<label for="lastName">Last Name*:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+			<br><br>
+			<div id="error_lastName" style="display: none; color: red;">
+				Invalid Last Name, Please enter valid Last name.
+				<br><br>
+			</div>
+
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" />
+			<br><br>
+			<div id="error_emailId" style="display: none; color: red;">
+				Invalid Email Address, Please enter valid email.
+				<br><br>
+			</div>
+
+			<label for="phoneNumber">Phone Number*:</label>
+			<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" />
+			<br><br>
+			<div id="error_phoneNumber" style="display: none; color: red;">
+				Invalid Phone number, Please enter valid phone number.
+				<br><br>
+			</div>
+			
+			<label for="address1">Street Address 1*:</label>
+			<input type="text" name="address1" id="address1" placeholder="Street Address 1" />
+			<br><br>
+			<div id="error_address1" style="display: none; color: red;">
+				Invalid Address 1, Please enter valid address.
+				<br><br>
+			</div>
+
+			<label for="address2">Street Address 2:</label>
+			<input type="text" name="address2" id="address2" placeholder="Street Address 2" />
+			<br><br>
+			<div id="error_address2" style="display: none; color: red;">
+				Invalid Address 2, Please enter valid address.
+				<br><br>
+			</div>
+
+			<label for="city">City*:</label>
+			<input type="text" name="city" id="city" placeholder="City" />
+			<br><br>
+			<div id="error_city" style="display: none; color: red;">
+				Invalid City Name, Please enter valid City.
+				<br><br>
+			</div>
+
+			<label for="state">State*:</label>
+			<input type="text" name="state" id="state" placeholder="state" />
+			<br><br>
+			<div id="error_state" style="display: none; color: red;">
+				Invalid State Name, Please enter valid state.
+				<br><br>
+			</div>
+
+            <label for="zipcode">ZipCode*:</label>
+			<input type="text" name="zipcode" id="zipcode" placeholder="xxxxx" />
+			<br><br>
+			<div id="error_zipcode" style="display: none; color: red;">
+				Invalid Zip Code, Please enter valid zip code.
+				<br><br>
+			</div>
+             
+            <label for="checkbox">How did you hear*:</label>
+			<div id="checkbox">
+			<input type='checkbox' name="checkbox1" value="Facebook" onchange="onCheckChange(this)" /> Facebook
+            <input type='checkbox' name="checkbox2" value="Google" onchange="onCheckChange(this)"/> Google
+            <input type='checkbox' name="checkbox3" value="Yelp" onchange="onCheckChange(this)"/> Yelp 
+			</div>
+			<br><br> 
+			<div id="error_checkbox" style="display: none; color: red;">
+				Please select at least one option.
+				<br><br>
+			</div>
+             
+			<label for="comments">Comments*:</label>
+			<textarea name="comments" id="comments" placeholder="Your comments" rows="5" cols="25" required></textarea>
+			<br><br>
+			<div id="error_comments" style="display: none; color: red;">
+				Invalid Comment, Please enter valid comment.
+				<br><br>
+			</div>
+
+			<label for="selectlist">What would you like to have today?*:</label>
+			<select id="listOptions" name="options" onchange="onListselection(this)" required>
+				<option value="" selected disabled hidden>Select an Option</option>
+				<option value="coffee">Coffee</option>
+				<option value="BlackTea">Black Tea</option>
+				<option value="GreenTea">Green Tea</option>
+				<option value="Lemonade">Lemonade</option>
+				<option value="Water">Water</option>
+			</select>
+			<br/><br/><br/><br/>
+			<div id="coffee" style="display: none;" >
+				<input type='checkbox' name="check11" class="check" value="Milk Coffee" onchange="onCheckSelect(this)" /> Milk Coffee
+				<input type='checkbox' name="check12" class="check"  value="Black Coffee" onchange="onCheckSelect(this)"/> Black Coffee
+				
+			</div>
+			<div id="BlackTea" style="display: none;">
+				<input type='checkbox' name="check21" class="check"  value="Large" onchange="onCheckSelect(this)" /> Large
+				<input type='checkbox' name="check22" class="check"  value="Medium" onchange="onCheckSelect(this)"/> Medium
+				<input type='checkbox' name="check22" class="check"  value="Small" onchange="onCheckSelect(this)"/> Small
+				
+			</div>
+			<div id="GreenTea" style="display: none;">
+				<input type='checkbox' name="check31" class="check" value="Ginger Green Tea" onchange="onCheckSelect(this)" /> Ginger Green Tea
+				<input type='checkbox' name="check32" class="check" value="Plain Green Tea" onchange="onCheckSelect(this)"/> Plain Green Tea
+				
+			</div>
+			<div id="Lemonade" style="display: none;">
+				<input type='checkbox' name="check41" class="check" value="With Ice" onchange="onCheckSelect(this)" /> With Ice
+				<input type='checkbox' name="check42" class="check" value="Without Ice" onchange="onCheckSelect(this)"/> Without Ice
+				
+			</div>
+			<div id="Water" style="display: none;">
+				<input type='checkbox' name="check51" class="check" value="Cold" onchange="onCheckSelect(this)" /> Cold
+				<input type='checkbox' name="check52" class="check" value="Luke Warm" onchange="onCheckSelect(this)"/> Luke Warm
+				
+			</div>
+			<br/><br/>
+			<div id="instruction"  style="display: none;">
+				<label for="Inputs">Give Your Inputs*:</label>
+				<input type="text" name="Inputs" id="Inputs" placeholder="Order Instructions" />
+			</div>
+			<br/><br/><br/><br/>
+			<input type="Submit" name="submit" disabled>
+			<input type="Reset" name="reset">
+			<br><br>
+		 </form>
+	 </main>
+ </div>
+ <br/><br/>
+		
+	 
+	 <div id="feedbackTable" >
+		<h2>Feedback Data:</h2>
+		<table id="myTable" >
+			<thead>
+			  <tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone number</th>
+				<th>Street Address 1</th>
+				<th>Street Address 2</th>
+				<th>City</th>
+				<th>State</th>
+				<th>ZipCode</th>
+				<th>How did you hear?</th>
+				<th>Comment</th>
+				<th>What would you like to have?</th>
+				<th>Drink Selection</th>
+				<th>Order Instructions</th>
+			  </tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	
+	 </div>
+
+ <script src="script.js"></script>
+
+ </body>
+</html>
