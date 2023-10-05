@@ -149,7 +149,7 @@ window.onload = () => {
             if(!isFirstNameInValid || !isLastNameInValid || !isEmailInValid || !isPhoneNumberInValid || !isZipCodeInvalid || !isTextInvalid  || !isAdd1Valid || !isAdd2Valid || !isCityValid || !isStateValid ){
                 addRecord();
                 alert("Data entered successfully");
-                //resetForm();
+                resetForm();
             }
             else{
                 alert("Please enter valid details")
@@ -186,10 +186,22 @@ function onCheckChange(checkRef){
 
 function onListselection(listRef){
 
-    
+    var listSelected;
     console.log(listRef);
-    var listSelected = listRef.value;
+    if(listRef === "")
+        listSelected = ""
+    else
+        listSelected =listRef.value;
     console.log(listSelected);
+    if(listSelected ==""){
+        document.getElementById(`coffee`).style.display = "none";
+        document.getElementById(`BlackTea`).style.display = "none";
+        document.getElementById(`GreenTea`).style.display = "none";
+        document.getElementById(`Lemonade`).style.display = "none";
+        document.getElementById(`Water`).style.display = "none";
+        document.getElementById(`instruction`).style.display = "none";
+    }
+
     if(listSelected != 'coffee'){
         document.getElementById(`coffee`).style.display = "none";
     }
@@ -228,10 +240,21 @@ function onCheckSelect(listCheckRef){
 
 
 
-/*function resetForm(){
+function resetForm(){
     //document.getElementById('myForm').reset();
-    document.myForm.message.value = "";
-}*/
+    var formValues = document.myForm;
+    document.getElementById("firstName").value = "";
+    document.getElementById("lastName").value = "";
+    document.getElementById("emailId").value = "";
+    document.getElementById("phoneNumber").value = "";
+    document.getElementById("address1").value = "";
+    document.getElementById("address2").value = "";
+    document.getElementById("city").value = "";
+    document.getElementById("state").value = "";
+    document.getElementById("zipcode").value = "";
+    document.getElementById("comments").value = "";
+    document.getElementById("Inputs").value = "";
+}
 
 
 function addRecord(){
