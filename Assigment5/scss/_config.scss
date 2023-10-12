@@ -1,0 +1,28 @@
+$font-stack: Arial, Helvetica, sans-serif;
+$font-text: Sofia, Tangerine, Arial;
+$dark-color:rgb(48, 23, 5);
+$primary-color: white;
+// $primary-color: white;
+$secondary-color: rgb(162, 137, 87);
+$back-image: '/Images/background.jpg';
+//$size: 10;
+$selector: a;
+
+//@mixin set-background()
+
+// set the text color based on background color
+@function set-background-color($color) {
+    @if($color != $primary-color) {
+        @return transparent;
+    }
+    @else {
+        @return $secondary-color;
+    }
+}
+
+
+// set the background and text color
+@mixin set-buttonColor($color) {
+    color: $color;
+    background-color: set-background-color($color);
+}

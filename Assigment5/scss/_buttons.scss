@@ -1,0 +1,30 @@
+%btn {
+    display: inline-block;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    padding: 8px 20px;
+    margin: 3px;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+}
+
+.btn-search{
+    @extend %btn;
+    @include set-buttonColor($dark-color);
+    height:50px;
+    width: 150px; 
+    //color: $dark-color;
+    font-size: 20px;
+    font-family: $font-text;
+    font-style: bold;
+    //background: transparent;
+
+}
+
+.btn-search:hover{
+    @include set-buttonColor($primary-color);
+}

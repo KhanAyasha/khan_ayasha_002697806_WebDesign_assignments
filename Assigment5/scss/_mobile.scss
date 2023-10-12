@@ -1,0 +1,27 @@
+@media (max-width: 700px) {
+    .link-container {
+        
+        img{
+            
+            display: none;
+        }
+            
+    }
+
+    .container-search{
+        input{
+            width: 200px;
+            border: 2px solid $primary-color;
+            color: $primary-color;
+            }
+        ::placeholder{
+            color: $primary-color;
+        }
+        // #{$selector}{
+
+
+        // }
+        
+    }
+    
+}
