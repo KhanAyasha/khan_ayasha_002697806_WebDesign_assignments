@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JArrow Function Calculator</title>
+    <style>
+        label {	float: left;
+                width: 150px;}
+        #container{
+            width: 700px;
+            margin: auto;
+            background-color: rgb(197, 186, 166);
+            margin-top: 5%;
+            margin-left: 20%;
+        } 
+        main{
+            padding: 50px;
+        }
+        able input{
+            margin: 0 5px;
+                
+            }
+        body{
+            background-color: rgb(186, 227, 227);
+        }
+        .btn{
+            font-size: 15px;
+            padding: 3px;
+            margin-left: 5%;
+            background-color: rgb(137, 131, 131);
+            /* border: 15px; */
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        form{
+            margin-left: 20%;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="container">
+	 
+        <main>
+           <h3> Calculator</h3>
+            <br><br>
+            <form method="post" name = "myForm" id="myForm">
+   
+               <label for="number1">Enter Your first Number*:</label>
+               <input type="text" name="number1" id="number1" placeholder="" />
+               <br><br>
+               <div id="error_number1" style="display: none; color: red;">
+                   Invalid number, Please enter a valid number.
+                   <br><br>
+               </div>
+   
+               <label for="number2">Enter Your Second Number*:</label>
+               <input type="text" name="number2" id="number2" placeholder="" />	
+               <br><br>
+               <div id="error_number2" style="display: none; color: red;">
+                Invalid number, Please enter a valid number.
+                <br><br>
+               </div>
+               <label for="result">Result is*:</label>
+               <input type="text" name="result" id="result" placeholder="" readonly/>	
+               <br><br>
+               <button type="submit" id="add"  class="btn" >Add</button>
+               <button type="submit" id="substract" class="btn">Substract</button>
+               <button type="submit" id="multiply" class="btn">Multiply</button>
+               <button type="submit" id="divide" class="btn">divide</button>
+               <br><br>
+            </form>
+        </main>
+    </div>
+    <br/><br/>
+   
+    <script src="calculator.js"></script>
+   
+    </body>
+   </html>
+   
+</body>
+</html>

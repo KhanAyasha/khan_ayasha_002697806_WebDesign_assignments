@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(186, 227, 227);
+        }
+        .stopwatch {
+            margin-top: 10%;
+            margin-left: 20%;
+            text-align: center;
+            background-color: rgb(197, 186, 166);
+            width: 700px;
+            padding: 2%;
+            
+        }
+
+        #time{
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        input[type="datetime-local"] {
+            font-size: 10px;
+            padding: 5px;
+        }
+
+        button {
+            margin: 5px;
+            font-size: 15px;
+            padding: 3px;
+            margin-left: 5%;
+            background-color: rgb(137, 131, 131);
+            /* border: 15px; */
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="stopwatch">
+        <h3 style="text-align: center;">Stop Watch</h3>
+        <label id="time">00:00:00</label>
+        <input type="datetime-local" id="datePicker" disabled>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+    </div>  
+    
+    <script src="stopwatch.js"></script>
+
+</body>
+</html>

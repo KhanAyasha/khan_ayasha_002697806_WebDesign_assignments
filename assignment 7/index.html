@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>J-Query and Arrow Function Assignment</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: rgb(197, 186, 166);
+          margin-top: 5%;
+          margin-left: 20%;
+      } 
+      main{
+          padding: 50px;
+      }
+	  able input{
+		margin: 0 5px;
+			
+		}
+    .btn-submit{
+        align-items: center;
+        margin-left: 25%;
+    }
+    body{
+            background-color: rgb(186, 227, 227);
+        }
+
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ </head>
+ <body>
+ <div id="container">
+	 
+	 <main>
+	 <h2>Login</h2>
+		<h3> Note : Fields marked with an asterisk(*) are mandatory</h3>
+		 <br><br>
+		 <form method="post" name = "myForm" id="myForm">
+
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" />
+			<br><br>
+			<div id="error_emailId" style="display: none; color: red;">
+				Invalid Email Address, Please enter valid email.
+				<br><br>
+			</div>
+
+            <label for="userName">User Name*:</label>
+			<input type="text" name="userName" id="userName" placeholder="User Name" />	
+			<br><br>
+			<div id="error_userName" style="display: none; color: red;">
+				Invalid User Name, Please enter valid User name.
+				<br><br>
+			</div>
+
+
+			<label for="password">Password*:</label>
+			<input type="text" name="password" id="password" placeholder="******" />
+			<br><br>
+			<div id="error_password" style="display: none; color: red;">
+				Invalid Password, Please enter valid Password.
+				<br><br>
+			</div>
+			
+			<label for="confirmPassword">Confirm Password*:</label>
+			<input type="text" name="confirmPassword" id="confirmPassword" placeholder="******" />
+			<br><br>
+			<div id="error_confirmPassword" style="display: none; color: red;">
+				Password does not match with previously entered password.
+				<br><br>
+            </div>
+            <br/><br/>
+			<input type="Submit" name="submit" class="btn-submit" onclick="location.replace('calculator.html');" disabled>
+			<br><br>
+		 </form>
+	 </main>
+ </div>
+ <br/><br/>
+
+ <script src="index.js"></script>
+ 
+
+ </body>
+</html>
