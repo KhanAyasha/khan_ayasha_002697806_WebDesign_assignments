@@ -1,0 +1,26 @@
+
+h3{
+  text-align: center;
+  padding: 5px;
+}
+p{
+  text-align: center;
+  padding: 10px;
+}
+
+  .card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+   .component{
+    background: rgb(20, 20, 22);
+    font-weight: 500;
+    color: white;
+    /* background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%); */
+  } 
+
+  AboutCard1{
+    color: black;
+  }
