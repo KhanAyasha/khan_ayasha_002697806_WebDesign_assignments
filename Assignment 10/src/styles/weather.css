@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;400&family=Poltawski+Nowy:wght@500&family=Poppins:wght@200;400&family=Tiro+Devanagari+Sanskrit&family=Titan+One&display=swap');
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+
+.weather-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: whitesmoke;
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-left{
+    text-align: center;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+    margin-right: 15px;
+}
+
+
+.temp{
+    display: flex;
+    align-items: center;
+}
+
+.temp h3{
+    margin-left: 15px;
+}
+
+.card-right{
+    margin-top: 30px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+.extended-forecast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  .ext-cards {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .ext-card {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    margin: 1rem; 
+    cursor: pointer;
+  }
+
+.ext-card h5{
+    font-size: 16px;
+}
+
+.content{
+    padding-top:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: whitesmoke;
+}
+  
+  .ext-card:hover {
+    transform: scale(1.05);
+  }
+
+  h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+
+  body{
+    background-color: rgb(46, 23, 46);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh; 
+}
+
+.dets{
+  display: flex;
+  justify-content: space-between;
+}
+
+.daily-cards {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.daily-card {
+  width: 22%; 
+  margin-bottom: 20px;
+  padding: 10px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: whitesmoke;
+
+}
+
+.time{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 22px;
+}
+
+.temparature,.description{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.temp-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
