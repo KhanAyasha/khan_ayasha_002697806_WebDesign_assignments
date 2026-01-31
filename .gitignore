@@ -1,48 +1,42 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
 
-Assignment 8/app.js
-Assignment 8/package-lock.json
-Assignment 8/package-lock.json
-Assignment 8/package.json
-Assignment 8/README.md
-Assignment9 -1/frontend/my-app/node_modules/.bin/acorn
-Assignment9 -1/frontend/my-app/node_modules/.bin/ansi-html
-Assignment9 -1/frontend/my-app/node_modules/.bin/autoprefixer
-Assignment9 -1/frontend/my-app/node_modules/.bin/browserslist
-Assignment9 -1/frontend/my-app/node_modules/.bin/browserslist-lint
-Assignment9 -1/frontend/my-app/node_modules/.bin/css-blank-pseudo
-Assignment9 -1/frontend/my-app/node_modules/.bin/css-has-pseudo
-Assignment9 -1/frontend/my-app/node_modules/.bin/css-prefers-color-scheme
-Assignment9 -1/frontend/my-app/node_modules/.bin/cssesc
-Assignment9 -1/frontend/my-app/node_modules/.bin/detect
-Assignment9 -1/frontend/my-app/node_modules/.bin/detect-port
-Assignment9 -1/frontend/my-app/node_modules/.bin/ejs
-Assignment9 -1/frontend/my-app/node_modules/.bin/escodegen
-Assignment9 -1/frontend/my-app/node_modules/.bin/esgenerate
-Assignment9 -1/frontend/my-app/node_modules/.bin/eslint
-Assignment9 -1/frontend/my-app/node_modules/.bin/esparse
-Assignment9 -1/frontend/my-app/node_modules/.bin/esvalidate
-Assignment9 -1/frontend/my-app/node_modules/.bin/he
-Assignment9 -1/frontend/my-app/node_modules/.bin/html-minifier-terser
-Assignment9 -1/frontend/my-app/node_modules/.bin/import-local-fixture
-Assignment9 -1/frontend/my-app/node_modules/.bin/is-docker
-Assignment9 -1/frontend/my-app/node_modules/.bin/jake
-Assignment9 -1/frontend/my-app/node_modules/.bin/jest
-Assignment9 -1/frontend/my-app/node_modules/.bin/jiti
-Assignment9 -1/frontend/my-app/node_modules/.bin/js-yaml
-Assignment9 -1/frontend/my-app/node_modules/.bin/jsesc
-Assignment9 -1/frontend/my-app/node_modules/.bin/json5
-Assignment9 -1/frontend/my-app/node_modules/.bin/loose-envify
-Assignment9 -1/frontend/my-app/node_modules/.bin/lz-string
-Assignment9 -1/frontend/my-app/node_modules/.bin/mime
-Assignment9 -1/frontend/my-app/node_modules/.bin/mkdirp
-Assignment9 -1/frontend/my-app/node_modules/.bin/multicast-dns
-Assignment9 -1/frontend/my-app/node_modules/.bin/nanoid
-Assignment9 -1/frontend/my-app/node_modules/.bin/node-which
-Assignment9 -1/frontend/my-app/node_modules/.bin/parser
-Assignment9 -1/frontend/my-app/node_modules/.bin/react-scripts
-Assignment9 -1/frontend/my-app/node_modules/.bin/regjsparser
-Assignment9 -1/frontend/my-app/node_modules/.bin/resolve
-Assignment9 -1/frontend/my-app/node_modules/.bin/rimraf
-Assignment9 -1/frontend/my-app/node_modules/.bin/rollup
-Assignment9 -1/frontend/my-app/node_modules/.bin/semver
-Assignment9 -1/frontend/my-app/node_modules/.bin/sucrase
+# Node / JS
+**/node_modules/
+**/.pnp/
+**/.pnp.js
+**/.parcel-cache/
+**/.cache/
+**/coverage/
+**/dist/
+**/build/
+**/.next/
+**/.nuxt/
+**/.expo/
+**/.vite/
+**/.turbo/
+**/.eslintcache
+**/.stylelintcache
+**/.npm/
+**/.yarn/
+**/.yarn/*
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+
+# Env files
+**/.env
+**/.env.*
+
+# Local IDE settings
+**/.idea/
+**/.vscode/
+
+# Local tooling output
+**/.rpt2_cache/
+**/.nyc_output/
